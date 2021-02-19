@@ -1,5 +1,3 @@
-Serboi Florea-Dan 335CB
-
 Avem o singura sursa, main.py, pentru a rezolva cerinta data. Aceasta are 3 
 functii: compute_delta, str_parser si main. Un singur modul este importat, sys, 
 pentru a avea acces la parametri dati din linia de comanda.
