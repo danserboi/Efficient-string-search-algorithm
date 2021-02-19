@@ -1,0 +1,21 @@
+Serboi Florea-Dan 335CB
+
+Avem o singura sursa, main.py, pentru a rezolva cerinta data. Aceasta are 3 
+functii: compute_delta, str_parser si main. Un singur modul este importat, sys, 
+pentru a avea acces la parametri dati din linia de comanda.
+
+In functia compute_delta, calculam matricea delta, reprezentata de un dictionar 
+indexat cu perechi (stare, caracter). Astfel, calculam pentru fiecare pereche 
+posibila (stare, caracter) urmatoarea stare in care se ajunge, adica tranzitia.
+
+In functia str_parser scriem in fisierul de output pozitiile unde se gaseste 
+pattern-ul in sirul in care se cauta. Astfel, deschidem fisierul de ouput, 
+apelam compute_delta si tinand cont ca plecam initial din starea 0, parcurgem 
+fiecare caracter din sirul in care se cauta pattern-ul, actualizand mereu 
+starea curenta. Cand ajungem in starea finala, inseamna ca am gasit pattern-ul 
+si scriem pozitia in fisier.
+
+In functia main extragem denumirile fisierelor de input si output date din 
+linia de comanda, folosindu-ne de modulul sys, citim pattern-ul si string-ul in 
+care se cauta dupa care apelam functia str_parser care scrie rezultatul dorit 
+in fisierul de output.
